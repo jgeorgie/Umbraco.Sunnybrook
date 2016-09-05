@@ -604,6 +604,17 @@ body {
 	min-height: calc(100vh - 486px);
 }
 
+#login_status{
+	color:white;
+	float:right;
+	margin: 15px;
+}
+
+#login_status > p{
+	color:white;
+	opacity:0.85;
+}
+
 header {
 	background-color: #3738ab;
 	text-align:center;
