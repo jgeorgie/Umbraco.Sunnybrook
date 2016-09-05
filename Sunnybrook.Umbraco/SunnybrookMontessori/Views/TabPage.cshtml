@@ -1,0 +1,45 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.TabPage>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Early Pre-School</a></li>
+    <li><a href="#tabs-2">Pre-School</a></li>
+    <li><a href="#tabs-3">Aenean lacinia</a></li>
+  </ul>
+  <div id="tabs-1">
+	<h1 class="text_center">Early Montessori Preschool </ br>(Ages 12 months – 3 years)</h1>
+ 		 Early Montessori Preschool class is offering introductory Montessori lessons to prepare students for preschool while focusing on cooperative toilet training by parents and staff. This program explores all Montessori curricula areas with emphasis in the Practical Life area. Practical Life exercises at this age consists of practice of everyday activities including putting on shoes/coats, washing hands, putting works away and brushing teeth. Developmentally appropriate lessons in the other areas including language, math and grace/courtesy round out this program's curriculum. Teaching emphasis is placed on individual as well as group learning.
+    </div>
+  <div id="tabs-2">
+	<h1>Traditional Montessori Preschool (3-6)</h1>
+	Available to toilet trained students only.
+	Traditional Montessori Preschool classes are offering a wide age range utilizing Montessori teaching methods and materials. Our Preschool experience offers exposure to all areas of the Montessori philosophy while incorporating some facets of more traditional teaching methods. Foreign language (Spanish) and enrichment program (Yoga, Dance & Movement, Drama classes) is incorporated into the curriculum. All areas are broken down into specific functions geared to the young child's intellectual and developmental levels. Lessons are presented with 2 or 3 dimensional materials allowing the child to see concepts clearly and move from concrete to more abstract ideas. Most lessons are self-correcting, letting the child experience error as part of the learning process.
+  	<ul>
+		<li>Practical Life</li>
+		<li>Sensorial Experiences</li>
+		<li>Language</li>
+		<li>Mathematics</li>
+		<li>History</li>
+		<li>Botany </li>
+		<li>Anatomy</li>
+		<li>Geography/Culture </li>
+		<li>Dance/Movement </li>
+		<li>Art/Music</li>
+	</ul>
+  </div>
+  <div id="tabs-3">
+    <p>Mauris eleifend est et turpis. Duis id erat. Suspendisse potenti. Aliquam vulputate, pede vel vehicula accumsan, mi neque rutrum erat, eu congue orci lorem eget lorem. Vestibulum non ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Fusce sodales. Quisque eu urna vel enim commodo pellentesque. Praesent eu risus hendrerit ligula tempus pretium. Curabitur lorem enim, pretium nec, feugiat nec, luctus a, lacus.</p>
+    <p>Duis cursus. Maecenas ligula eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus. Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio. Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae lectus hendrerit hendrerit.</p>
+  </div>
+</div>
+
+	
+@CurrentPage.GetGridHtml("content", "fanoe")
