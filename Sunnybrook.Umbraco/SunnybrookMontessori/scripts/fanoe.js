@@ -61,7 +61,8 @@
    equalHeightChecker();
 	  
 	  var d= $("#hiddenDivStyle").parent().parent().parent();
-	  d.attr("class","newsDiv col-md-3 column")
+	  d.attr("class","newsDiv col-md-3 column");
+	  
   });
 
   // and on resize

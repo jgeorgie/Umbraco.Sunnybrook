@@ -9,7 +9,9 @@
 
 @{
     var loginModel = new LoginModel();
-    
+	var loginStatusModel = Members.GetCurrentLoginStatus();
+    loginModel.RedirectUrl = "/Home";
+	
     Html.EnableClientValidation();
     Html.EnableUnobtrusiveJavaScript();
     Html.RequiresJs("/umbraco_client/ui/jquery.js");
@@ -37,6 +39,8 @@
         @Html.ValidationMessageFor(m => loginModel.Password)
         <br />
 
-        <button>Login</button>
+		 @Html.HiddenFor(m => loginModel.RedirectUrl)
+		
+        <button id="login_button">Login</button>
     </fieldset>  
 }

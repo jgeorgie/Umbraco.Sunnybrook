@@ -30,12 +30,27 @@
             {
 				if(!childPage.umbracoNaviHide)
 				{
-					<li class="@(childPage.IsAncestorOrSelf(CurrentPage) ? "selected" : null)">
-                    	<a href="@childPage.Url">@childPage.Name</a>
-                    </li>
+					
+					if(childPage.Name=="Login" || childPage.Name=="Register")
+					{
+						if(!Umbraco.MemberIsLoggedOn())
+						{
+							<li class="@(childPage.IsAncestorOrSelf(CurrentPage) ? "selected" : null)">
+                    			<a href="@childPage.Url">@childPage.Name</a>
+                  		 	</li>
+						}
+					}
+					else
+					{
+						<li class="@(childPage.IsAncestorOrSelf(CurrentPage) ? "selected" : null)">
+                    			<a href="@childPage.Url">@childPage.Name</a>
+                  		 </li>
+					}
+						
+					}
 				}
+				
                 
-            }            
         }
     </ul>
 }
