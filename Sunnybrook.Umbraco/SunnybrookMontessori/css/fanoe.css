@@ -1011,7 +1011,7 @@ footer.dark a:hover {
 }
 
 ul {
-	margin-left: 20px;
+	
 }
 
 img {
@@ -1223,7 +1223,7 @@ nav li > ul {
 	white-space: nowrap;
 	height: auto;
 	margin-bottom: 0;
-	margin-left: 10px;
+	
 	text-align: left;
 	background: #8d91fd;
 	color:white;
@@ -1231,7 +1231,7 @@ nav li > ul {
 	z-index:999;
 	border: 1px solid white;
 	border-radius:5px;
-	padding: 5px 8px 5px 0;
+	
 }
 	
 

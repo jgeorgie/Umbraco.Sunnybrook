@@ -30,7 +30,7 @@
         @Html.ValidationSummary("loginModel", true)
 
         @Html.LabelFor(m => loginModel.Username)
-        @Html.TextBoxFor(m => loginModel.Username)
+		@Html.TextBoxFor(m => loginModel.Username)
         @Html.ValidationMessageFor(m => loginModel.Username)
         <br />
 
@@ -40,7 +40,6 @@
         <br />
 
 		 @Html.HiddenFor(m => loginModel.RedirectUrl)
-		
-        <button id="login_button">Login</button>
+       <button id="login_button" class="btn btn-primary">Login</button>
     </fieldset>  
 }
