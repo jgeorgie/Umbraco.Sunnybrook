@@ -28,7 +28,7 @@
             } 
 			else
             {
-				if(childPage.Name!="Forbidden Access")
+				if(!childPage.umbracoNaviHide)
 				{
 					<li class="@(childPage.IsAncestorOrSelf(CurrentPage) ? "selected" : null)">
                     	<a href="@childPage.Url">@childPage.Name</a>
