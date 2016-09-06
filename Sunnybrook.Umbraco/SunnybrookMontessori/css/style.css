@@ -15,24 +15,3 @@
 #login_button{
 	color:red;
 }
-#loginModel_Password{
-	width:180px;
-    padding: 10px 18px;
-    margin: 8px 4px;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-#loginModel_Username{
-	width:180px;
-    padding: 10px 18px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-}
-#wrapper{
-	width:800px;
-}
