@@ -11,14 +11,17 @@ img{
 
 
 .carousel-inner {
+  text-align: center;
+  margin-top: 20px;
   position: relative;
   overflow: hidden;
   width: 100%;
+  max-height:450px;
 }
 
 .carousel-inner > .item {
   max-width:100%;
-  margin: 20px auto;
+  margin: 0 auto;
   display: none;
   position: relative;
   -webkit-transition: 0.6s ease-in-out left;
@@ -30,8 +33,8 @@ img{
 }
 
 .carousel-inner > .item > img{
-   width:650px;
-	max-height:400px;
+   width:800px;
+   max-height:550px;
 }
 
 .carousel-inner > .active,
@@ -186,11 +189,10 @@ img{
     font-size: 30px;
   }
   .carousel-caption {
-    left: 20%;
-    right: 20%;
+
     padding-bottom: 30px;
   }
   .carousel-indicators {
-    bottom: 75px;
+    bottom: 55px;
   }
 }

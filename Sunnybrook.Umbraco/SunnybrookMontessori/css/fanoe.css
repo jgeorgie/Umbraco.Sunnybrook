@@ -586,9 +586,11 @@ body {
 }
 
 .newsDiv{
-	border: 3px solid #8d91fd;
+	border: 3px solid #3738ab;
+	height:450px;
 	border-radius: 10px;
-	padding:10px
+	padding:10px;
+	overflow-y:scroll;
 }
 
 body {
