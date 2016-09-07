@@ -44,19 +44,16 @@
 
 @*NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed*@
 @Html.RenderJsHere()
-<div class="container col-md-6">
+
 @if (success) 
 { 
     @* This message will show if RedirectOnSucces is set to false (default) *@
     <p>Registration succeeeded.</p>
 }
 else
-	
 {
-	
     using (Html.BeginUmbracoForm<UmbRegisterController>("HandleRegisterMember"))
     {
-		
         <fieldset>
             <legend>Register Member</legend>
 
@@ -102,10 +99,7 @@ else
             @Html.HiddenFor(m => registerModel.RedirectUrl)
             @Html.HiddenFor(m => registerModel.UsernameIsEmail)
 
-            <button class="login_and_reg_buttons">Register</button>
+            <button>Register</button>
         </fieldset>
-        
-	}
-	
+    }
 }
-</div>
