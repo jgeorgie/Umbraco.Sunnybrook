@@ -78,7 +78,7 @@
   });
 
   $('.has-child').click(function(){
-    if ( window.innerWidth < 768 ) {
+    if ( window.innerWidth < 995 ) {
       if ( $( this ).hasClass('selected')){
         $('.has-child').removeClass('selected');    
       } else {

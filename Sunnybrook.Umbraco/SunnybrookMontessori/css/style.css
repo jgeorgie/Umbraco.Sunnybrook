@@ -6,12 +6,8 @@
 .has-child>.level-3
 {
 	margin-left:10px;
-	
 }
-.has-child>ul>li:hover
-{
-	background-color:red;
-}
+
 #login_button{
 	color:red;
 }

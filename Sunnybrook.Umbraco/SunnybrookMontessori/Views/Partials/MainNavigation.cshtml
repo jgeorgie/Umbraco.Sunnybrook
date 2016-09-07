@@ -64,12 +64,12 @@
         var naviLevel = pages.First().Level;
         
         @* Add in level for a CSS hook *@
-        <ul class="sublevel level-@(naviLevel)">
+        <ul class="sublevel level-@(naviLevel) other_hover">
             @foreach (var page in pages)
             {
 				if (page.Children.Any())
 				{
-					<li class="has-child @(page.IsAncestorOrSelf(CurrentPage) ? "selected" : null)">
+					<li class="has-child ">
                        <span>@page.Name</span>
 						@childPages(page.Children)
                     </li>
