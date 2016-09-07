@@ -3,8 +3,18 @@
 }
 
 #myCarousel{
- padding-bottom: 40px;
+	    margin-left: 40px;
+ 	padding-bottom: 40px;
 }
+
+@media (max-width: 992px) {
+
+	#myCarousel{
+		margin-left:0px;
+		padding-bottom: 20px;
+	}
+}
+
 img{
  margin:auto;
 }
@@ -12,7 +22,6 @@ img{
 
 .carousel-inner {
   text-align: center;
-  margin-top: 20px;
   position: relative;
   overflow: hidden;
   width: 100%;

@@ -581,16 +581,29 @@ body {
 	overflow-x: hidden;
 }
 
+.global_container{
+	position:relative;
+	max-width: 1300px;
+    margin: auto;
+}
+
 #hiddenStyleDiv{
 	display:none;
 }
 
 .newsDiv{
 	border: 3px solid #3738ab;
+	position: absolute;
+	max-width:450px;
+    right: 5%;
 	height:450px;
 	border-radius: 10px;
 	padding:10px;
 	overflow-y:scroll;
+}
+
+.newsDiv h1{
+	color:#3738ab;
 }
 
 body {
@@ -649,11 +662,33 @@ header .row {
 }
 
 .brand {
-	margin: 7px auto;
-    width: 375px;
-    height: 135px;
+	margin: 15px auto;
+	width: 360px;
+    height: 125px;
 	background-size: cover;
 	background-repeat: no-repeat;
+}
+
+
+.tlogo{
+	font-size:40px;
+	color:white;
+	display:block;
+	position:absolute;
+}
+
+#tlogo_s{
+	
+}
+
+#tlogo_m{
+	top:45px;
+	left:40px;
+}
+
+#tlogo_sc{
+	top:90px;
+	left:100px;
 }
 
 #toggle {
@@ -1318,8 +1353,29 @@ nav .has-child:hover > .sublevel {
 
 }
 
-@media (max-width: 992px) {
 
+@media (max-width: 992px) {
+	
+	.newsDiv{
+    	border: 3px solid #3738ab;
+		position:static;
+		height:450px;
+		width:66%;
+		margin:0px auto 20px auto;
+		border-radius: 10px;
+		padding:10px;
+		overflow-y:scroll;
+	}
+	
+	#main_adress{
+	    color: white;
+    	font-family: cursive;
+		margin-top:0px;
+	    margin-right: 17px;
+   	    display: inline-block;
+        float: right;
+	}
+	
 body {
 	width: 100vw;
 	overflow-x: hidden;

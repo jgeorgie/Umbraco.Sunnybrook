@@ -1,4 +1,4 @@
-@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage
 @{ 
     var home = CurrentPage.Site();
 }
@@ -8,13 +8,17 @@
     @* For each child page under the home node, where the property umbracoNaviHide is not True *@
     foreach (var childPage in home.Children.Where("Visible"))
     {   
-        <div class="col-xs-6 col-sm-3">
+		if(childPage.Children.Any())
+		{
+			<div class="col-xs-6 col-sm-3">
             @if (childPage.Children.Where("Visible").Any())
             {                    
                 <strong>@childPage.Name</strong>
                 @childPages(childPage.Children)
             }
-        </div>
+        	</div>
+		}
+        
     }
 }
 
