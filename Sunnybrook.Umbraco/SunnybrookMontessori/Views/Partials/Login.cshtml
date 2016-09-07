@@ -21,8 +21,8 @@
 
 @* NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed *@
 @Html.RenderJsHere()
-<div class="content col-md-12">
-	<div class="col-md-6">
+<div class="container col-md-6">
+	
 @using (Html.BeginUmbracoForm<UmbLoginController>("HandleLogin"))
 {
     <fieldset>
@@ -41,11 +41,9 @@
         <br />
 
 		 @Html.HiddenFor(m => loginModel.RedirectUrl)
-       <button id="login_button" class="btn btn-primary">Login</button>
+       <button class="login_and_reg_buttons">Login</button>
     </fieldset>  
 }
-	</div>
-		<div class="col-md-6">
-		</div>
+		
 
 </div>
