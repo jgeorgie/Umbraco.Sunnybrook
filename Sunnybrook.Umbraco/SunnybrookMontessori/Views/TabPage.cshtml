@@ -3,13 +3,11 @@
 @{
 	Layout = "Master.cshtml";
 }
+	
 	<link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css">
-	<script src="/scripts/jquery-ui-1.12.0.min.js"></script>		
-<script>
-  $( function() {
-    $( "#tabs" ).tabs();
-  } );
-</script>
+	<script src="/scripts/jquery-ui-1.12.0.min.js"></script>	
+
+	
 <div id="tabs">
   <ul>
     <li><a href="#tabs-1">Early Pre-School</a></li>
@@ -83,6 +81,10 @@ After school dismissal at 3:00, Extended Childcare students are escorted to Exte
 Extended Childcare students are also admitted for a week of childcare during the Spring Break week. Although our school program is closed, Extended Childcare students are able to attend the Extended Childcare Program each regularly scheduled day during Spring Break.</p>
 		</div>
 </div>
-
 	
-@CurrentPage.GetGridHtml("content", "fanoe")
+	
+<script>
+  $( function() {
+    $( "#tabs" ).tabs();
+  } );
+</script>
