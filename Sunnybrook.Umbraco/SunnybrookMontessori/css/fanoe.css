@@ -209,7 +209,7 @@ html {
 }
 
 .dark {
-	background: #3738ab;
+	background: #3f41fd;
 }
 
 .dark * {
@@ -434,7 +434,7 @@ html {
 
 .round {
 	border-radius: 50%;
-	border:5px solid #8d91fd;
+	border:5px solid #3f41fd;
 }
 
 .text--center {
@@ -531,7 +531,7 @@ li {
 a,
 a:visited {
 	text-decoration: none;
-	width: auto;
+	width: 100%;
 	white-space: nowrap;
 }
 
@@ -592,7 +592,7 @@ body {
 }
 
 .newsDiv{
-	border: 3px solid #3738ab;
+	border: 3px solid #3f41fd;
 	position: absolute;
 	max-width:450px;
     right: 5%;
@@ -603,7 +603,7 @@ body {
 }
 
 .newsDiv h1{
-	color:#3738ab;
+
 }
 
 body {
@@ -631,7 +631,7 @@ body {
 }
 
 header {
-	background-color: #3738ab;
+	background-color: #3f41fd;
 	text-align:center;
 	position: relative;
 }
@@ -661,6 +661,11 @@ header .row {
     float: right;
 }
 
+#main_adress a{
+	text-decoration:none;
+	color:white;
+}
+
 .brand {
 	margin: 15px auto;
 	width: 360px;
@@ -669,27 +674,6 @@ header .row {
 	background-repeat: no-repeat;
 }
 
-
-.tlogo{
-	font-size:40px;
-	color:white;
-	display:block;
-	position:absolute;
-}
-
-#tlogo_s{
-	
-}
-
-#tlogo_m{
-	top:45px;
-	left:40px;
-}
-
-#tlogo_sc{
-	top:90px;
-	left:100px;
-}
 
 #toggle {
 	position: absolute;
@@ -782,7 +766,7 @@ header .row {
 
 nav {
 	z-index: 999;
-	background: rgba(0, 0, 0, 0.95);
+	background: rgba(63, 65, 253, 0.95);
 	text-align: right;
 	left: 0px;
 	right: 0px;
@@ -857,6 +841,13 @@ nav li > ul li a {
 
 nav li > ul li a:hover {
 	color: #fff;
+}
+
+.other_hover li a:hover{
+	background: #c6c5cd;
+    color: #fff;
+    text-decoration: underline;
+    opacity: 1;
 }
 
 nav li > ul > li > ul {
@@ -1271,14 +1262,12 @@ nav li > ul {
 	white-space: nowrap;
 	height: auto;
 	margin-bottom: 0;
-	
 	text-align: left;
-	background: #8d91fd;
-	color:white;
+	background: white;
     opacity: 0.95;
 	z-index:999;
-	border: 1px solid white;
-	border-radius:5px;
+	border: 3px solid #c6c5cd;
+	border-radius:15px;
 	
 }
 	
@@ -1286,7 +1275,7 @@ nav li > ul {
 nav li > ul li a {
 	padding: 8px 15px;
 	font-size: 15px;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgb(63, 65, 253);
 }
 
 nav .has-child:hover > .sublevel {
@@ -1390,11 +1379,11 @@ nav {
 	transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 	text-align: center;
 	position: absolute;
-	top: 144px;
+	top: 100px;
 }
 
 nav.open {
-	opacity: 1;
+	opacity: 0.97;
 	-webkit-transform: translateX(0);
 	-ms-transform: translateX(0);
 	transform: translateX(0);
