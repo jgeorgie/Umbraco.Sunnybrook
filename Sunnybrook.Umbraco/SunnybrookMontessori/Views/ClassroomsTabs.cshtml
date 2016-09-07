@@ -1,0 +1,36 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ClassroomsTabs>
+@using ContentModels = Umbraco.Web.PublishedContentModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+<link rel="stylesheet" type="text/css" href="/css/jquery-ui.min.css">
+<script src="/scripts/jquery-ui-1.12.0.min.js"></script>	
+	
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Early Pre-School</a></li>
+    <li><a href="#tabs-2">Pre-School A</a></li>
+    <li><a href="#tabs-3">Pre-School B</a></li>
+	<li><a href="#tabs-4">Pre-School C</a></li>
+	<li><a href="#tabs-5">Pre-Kindergarden</a></li>
+  </ul>
+
+@CurrentPage.GetGridHtml("content", "fanoe")
+</div>
+
+<script>
+	$(function(){
+		var h1s=$('h1');
+		var i=1;
+		h1s.each(function(){
+			$(this).parent().parent().parent().attr("id","tabs-"+i);
+			i++;
+		})
+		
+		$( "#tabs" ).tabs();
+	});
+</script>	
+	
+
+	
