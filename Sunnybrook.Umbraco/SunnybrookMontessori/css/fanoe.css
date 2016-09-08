@@ -1158,7 +1158,6 @@ pre {
 }
 
 @media (min-width: 768px) {
-
 .dark,
 .light,
 .yellow,
@@ -1379,7 +1378,7 @@ nav {
 	transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 	text-align: center;
 	position: absolute;
-	top: 100px;
+	top: 80px;
 }
 
 nav.open {
