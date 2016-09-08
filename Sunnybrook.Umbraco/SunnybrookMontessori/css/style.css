@@ -7,14 +7,10 @@
 {
 	margin-left:10px;
 }
-
-#login_button{
-	color:red;
-}
 #loginModel_Password{
 	width:180px;
     padding: 10px 18px;
-    margin: 8px 4px;
+    margin: 8px 0 0 8px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -23,12 +19,59 @@
 #loginModel_Username{
 	width:180px;
     padding: 10px 18px;
-    margin: 8px 0;
+    margin: 8px 0 0 4px;
     display: inline-block;
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
 }
 #wrapper{
-	width:800px;
-}
+  	background-color:white;
+ 	padding:30px;
+ }
+#registerModel_Name{
+   	 width:180px;
+     padding: 10px 18px;
+     margin: 8px 0 0 31px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+#registerModel_Email{
+ 	 width:180px;
+     padding: 10px 18px;
+     margin: 8px 0 0 35px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+ #registerModel_Password{
+ 	 width:180px;
+     padding: 10px 18px;
+     margin: 8px 0 0 4px;
+     display: inline-block;
+     border: 1px solid #ccc;
+     border-radius: 4px;
+     box-sizing: border-box;
+ }
+.login_and_reg_buttons{
+ 	 border-radius:10px;
+ 	 background-color: white;
+     color: black;
+     border: 2px solid #555555;
+     padding: 10px 26px;
+     text-align: center;
+     text-decoration: none;
+     display: inline-block;
+     font-size: 10x;
+     margin: 6px 2px;
+     -webkit-transition-duration: 0.4s; /* Safari */
+     transition-duration: 0.4s;
+     cursor: pointer;
+ }
+ .login_and_reg_buttons:hover{
+ 	 background-color: #3738ab;
+     color: white;
+  }
