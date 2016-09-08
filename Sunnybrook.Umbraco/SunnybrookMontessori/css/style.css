@@ -3,6 +3,18 @@
 .text_center {
   text-align: center;
 }
+
+.contacts{
+	display:block;
+}
+
+#map{
+	margin-top:20px;
+	margin-right:20px;
+	height:400px;
+	width:550px;
+	float:right;
+}
 .has-child>.level-3
 {
 	margin-left:10px;
