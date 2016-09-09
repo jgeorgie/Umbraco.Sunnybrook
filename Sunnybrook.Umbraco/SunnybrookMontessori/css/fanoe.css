@@ -620,14 +620,15 @@ body {
 }
 
 #login_status{
+	text-align: center;
 	color:white;
-	float:right;
-	margin: 15px;
+	margin-top: 7px;
 }
 
 #login_status > p{
 	color:white;
 	opacity:0.85;
+	font-size: 13px;
 }
 
 header {
@@ -655,7 +656,7 @@ header .row {
 #main_adress{
 	color:white;
 	font-family:cursive;
-	margin-top: 70px;
+	margin-top:34px;
     margin-right: 17px;
     display: inline-block;
     float: right;
@@ -790,7 +791,7 @@ nav > ul li a,
 nav > ul li span {
 	cursor: pointer;
 	display: inline-block;
-	padding: 15px;
+	padding: 7px;
 	font-size: 20px;
 	font-weight: 500;
 	color: rgba(255, 255, 255, 0.85);
@@ -1247,7 +1248,7 @@ nav > ul li {
 
 nav > ul li a,
 nav > ul li span {
-	font-size: 15px;
+	font-size: 13px;
 }
 
 nav > ul li:last-child a {
@@ -1273,7 +1274,7 @@ nav li > ul {
 
 nav li > ul li a {
 	padding: 8px 15px;
-	font-size: 15px;
+	font-size: 13px;
 	color: rgb(63, 65, 253);
 }
 
