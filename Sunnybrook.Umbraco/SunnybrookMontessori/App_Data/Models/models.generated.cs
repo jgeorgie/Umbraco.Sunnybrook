@@ -19,8 +19,8 @@ using Umbraco.ModelsBuilder;
 using Umbraco.ModelsBuilder.Umbraco;
 
 [assembly: PureLiveAssembly]
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5a400392d6082831")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "470ec212e6523a03")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
 
 namespace Umbraco.Web.PublishedContentModels
 {
@@ -384,12 +384,39 @@ namespace Umbraco.Web.PublishedContentModels
 		}
 
 		///<summary>
+		/// Contact Message
+		///</summary>
+		[ImplementPropertyType("contactMessage")]
+		public string ContactMessage
+		{
+			get { return this.GetPropertyValue<string>("contactMessage"); }
+		}
+
+		///<summary>
+		/// ContactName
+		///</summary>
+		[ImplementPropertyType("contactName")]
+		public string ContactName
+		{
+			get { return this.GetPropertyValue<string>("contactName"); }
+		}
+
+		///<summary>
 		/// Content
 		///</summary>
 		[ImplementPropertyType("content")]
 		public Newtonsoft.Json.Linq.JToken Content
 		{
 			get { return this.GetPropertyValue<Newtonsoft.Json.Linq.JToken>("content"); }
+		}
+
+		///<summary>
+		/// Email Form
+		///</summary>
+		[ImplementPropertyType("emailForm")]
+		public string EmailForm
+		{
+			get { return this.GetPropertyValue<string>("emailForm"); }
 		}
 	}
 
