@@ -8,6 +8,15 @@
 	display:block;
 }
 
+#contactus_container{
+	background-color:white;
+	    padding: 20px;
+}
+
+#contacts_container{
+	margin: 30px 0;
+}
+
 .logReg_cont fieldset{
     width: 300px;
     border: 2px solid black;
@@ -133,7 +142,8 @@
      box-sizing: border-box;
 }
 #Message{
-	 width:180px;
+	 width:300px;
+	 height:140px;
      padding: 10px 18px;
      margin: 8px 0 0 11px;
      display: inline-block;

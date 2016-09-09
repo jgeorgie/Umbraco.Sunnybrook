@@ -8,10 +8,10 @@
     @* For each child page under the home node, where the property umbracoNaviHide is not True *@
     foreach (var childPage in home.Children.Where("Visible"))
     {   
-		if(childPage.Children.Any())
+		if(childPage.Children.Any() && childPage.Name!="Contact Us")
 		{
 			<div class="col-xs-6 col-sm-3">
-            @if (childPage.Children.Where("Visible").Any())
+            @if (childPage.Children.Where("Visible").Any() )
             {                    
                 <strong>@childPage.Name</strong>
                 @childPages(childPage.Children)

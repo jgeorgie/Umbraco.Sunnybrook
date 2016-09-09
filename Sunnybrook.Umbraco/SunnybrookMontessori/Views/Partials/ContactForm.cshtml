@@ -5,7 +5,7 @@
 	 <br />
     <label for="nameForm">Name</label> @Html.TextBoxFor(x => x.Name, new { @class = "nameForm", placeholder = "Name" })
     <br />
-    <label for="messageForm">Message</label>@Html.TextAreaFor(x => x.Message, new { @class = "messageForm", placeholder = "Message" })
+    <label for="messageForm" style="float:left">Message</label>@Html.TextAreaFor(x => x.Message, new { @class = "messageForm", placeholder = "Message" })
     <br />
     <input type="submit" value="Send" id="sub_button" />
 }
