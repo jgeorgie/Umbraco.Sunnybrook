@@ -655,7 +655,7 @@ header .row {
 #main_adress{
 	color:white;
 	font-family:cursive;
-	margin-top: 37px;
+	margin-top: 70px;
     margin-right: 17px;
     display: inline-block;
     float: right;
@@ -1343,6 +1343,11 @@ nav .has-child:hover > .sublevel {
 
 
 @media (max-width: 992px) {
+	
+	#login_status{
+	    color: white;
+    margin: 15px;
+	}
 	
 	.newsDiv{
     	border: 3px solid #3738ab;
