@@ -1,0 +1,10 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<SunnybrookMontessori.Models.ContactModel>
+@using (Html.BeginUmbracoForm<SunnybrookMontessori.Controllers.ContactSurfaceController>("HandleFormPost"))
+{
+    <label for="emailForm">Email</label> @Html.TextBoxFor(x => x.Email, new { @class = "emailForm", placeholder = "Email" })
+    <label for="nameForm">Name</label> @Html.TextBoxFor(x => x.Name, new { @class = "nameForm", placeholder = "Name" })
+    <br />
+    <label for="messageForm">Message</label>@Html.TextAreaFor(x => x.Message, new { @class = "messageForm", placeholder = "Message" })
+    <br />
+    <input type="submit" value="Send" />
+}

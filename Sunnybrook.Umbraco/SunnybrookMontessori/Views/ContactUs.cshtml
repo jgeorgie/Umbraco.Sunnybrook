@@ -1,39 +1,44 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoTemplatePage<ContentModels.ContactUs>
-@using ContentModels = Umbraco.Web.PublishedContentModels;
-@{
-	Layout = "Master.cshtml";
-}
+    @using ContentModels = Umbraco.Web.PublishedContentModels;
+    @{
+    Layout = "Master.cshtml";
+    }
 
-<div id="contactus_container" class="col-md-12">
-	
-	<div id="contacts_container" class="col-md-6">
-		<span class="contacts">Hours of Operation: 7:00am - 6:00pm </span>
-		<span class="contacts">Voice: (425) 392-4087</span>
-		<span class="contacts">Fax: (425) 392-0995</span>
-		<span class="contacts">E-mail: info@sunnybrookmont.org</span>
-	</div>
+    <div id="contactus_container" class="col-md-12">
 
-	<div id="map" class="col-md-6"></div>
-</div>
-@CurrentPage.GetGridHtml("content", "fanoe")
+        <div id="contacts_container" class="col-md-6">
+            <span class="contacts">Hours of Operation: 7:00am - 6:00pm </span>
+            <span class="contacts">Voice: (425) 392-4087</span>
+            <span class="contacts">Fax: (425) 392-0995</span>
+            <span class="contacts">E-mail: info@sunnybrookmont.org</span>
+        </div>
 
- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB6t8tW5KNkjrOfOgsbdBJjCNdkzLZBc8"
-  type="text/javascript"></script>
-<script src="/scripts/gmaps.js"></script>	
-	
-<script>
-	function initialize() {
-        var map = new GMaps({
- 		 div: '#map',
- 		 lat: 47.541132,
- 		 lng: -122.044653,
-	     zoom: 17,
-	     mapTypeId: google.maps.MapTypeId.SATELLITE
-		});
-		 map.addMarker({
-        lat:  47.541132,
-        lng: -122.044653
-      });
-}
-google.maps.event.addDomListener(window, "load", initialize);
-</script>
+        <div id="map" class="col-md-6"></div>
+    </div>
+    <div class="container-fluid">
+        <div class="container">
+            @Html.Action("ShowForm","ContactSurface")
+        </div>
+    </div>
+    @CurrentPage.GetGridHtml("content", "fanoe")
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDB6t8tW5KNkjrOfOgsbdBJjCNdkzLZBc8"
+            type="text/javascript"></script>
+    <script src="/scripts/gmaps.js"></script>
+
+    <script>
+        function initialize() {
+            var map = new GMaps({
+                div: '#map',
+                lat: 47.541132,
+                lng: -122.044653,
+                zoom: 17,
+                mapTypeId: google.maps.MapTypeId.SATELLITE
+            });
+            map.addMarker({
+                lat: 47.541132,
+                lng: -122.044653
+            });
+        }
+        google.maps.event.addDomListener(window, "load", initialize);
+    </script>
