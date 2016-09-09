@@ -15,7 +15,10 @@
     *@
     
     var registerModel = Members.CreateRegistrationModel();
-    
+    var registerStatusModel = Members.GetCurrentLoginStatus();
+    registerModel.RedirectUrl = "/Home";
+	
+	
     @*
         Configurable here:           
     
@@ -44,7 +47,7 @@
 
 @*NOTE: This RenderJsHere code should be put on your main template page where the rest of your script tags are placed*@
 @Html.RenderJsHere()
-<div class="col-md-6">
+<div class="col-md-6 logReg_cont">
 @if (success) 
 { 
     @* This message will show if RedirectOnSucces is set to false (default) *@
@@ -98,7 +101,6 @@ else
             @Html.HiddenFor(m => registerModel.MemberTypeAlias)
             @Html.HiddenFor(m => registerModel.RedirectUrl)
             @Html.HiddenFor(m => registerModel.UsernameIsEmail)
-
             <button class="login_and_reg_buttons">Register</button>
         </fieldset>
     }

@@ -8,6 +8,14 @@
 	display:block;
 }
 
+.logReg_cont fieldset{
+    width: 300px;
+    border: 2px solid black;
+    border-radius: 21px;
+    padding: 15px;
+	margin: 0px auto;
+}
+
 #map{
 	margin-top:20px;
 	margin-right:20px;
@@ -107,8 +115,5 @@
 	 color: white;
 }
 @media(max-width:991px){
-#flex_div{
-	display:flex;
-	justify-content: center;
-	}
+
 }
